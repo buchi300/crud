@@ -1,0 +1,84 @@
+<?php
+$pageType ="video";
+require_once 'adminheader.php';
+require_once "conn.php";
+require_once "function.php";
+$sql  = "SELECT * from publication order by id desc";
+$result = $conn->query($sql);
+
+?>
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Video</h2>
+         
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us">
+      <div class="container">
+
+                <div class="row no-gutters m-3">
+
+                
+
+                    <div class="col-md-12 mb-3  mx-auto">  
+
+                      <form action="transact.php" method="post" enctype="multipart/form-data" >                     
+                      <div class="d-flex m-3">
+                          <div class="col-md-2">
+                              Video Title                
+                          </div>
+                          <div class="col-md-10">
+                          <input type="text" name="title" size="70" value="" required>
+                          
+                          </div>
+                        </div> 
+
+                        <div class="d-flex m-3">
+                            <div class="col-md-2">
+                            Upload Video           
+                            </div>
+                            <div class="col-md-10">
+                            <input name="image_filename" type="file" id="image_filename" required>  <br>
+					      <em>MP4 is the only Acceptable format.</em>
+                            
+                            </div>
+                        </div>
+                        
+                        <div class="form-row d-flex m-3">
+                            <div class="col-md-2">
+                            <input name="id" type="hidden" id="item_caption"  value="" required/>     
+                            </div>
+                            <div class="col-md-10">
+                            <input type="submit" name="action" value="Add Video">              
+                            </div>
+                        </div>
+
+                       
+                    </form>
+                        
+                    </div> 
+                    
+                    
+                   
+                    
+                </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+  </main><!-- End #main -->
+
+ <?php 
+require_once 'adminfooter.php';
+ ?>
