@@ -45,7 +45,7 @@ $row = $result->fetch_assoc();
 
                         <iframe src="assets/publication/<?php echo $_REQUEST['id']?>.pdf" width="100%" height="1000px">
                         </iframe>
-                        <a  href="publications.php" class="btn btn-primary mt-2">Back to Publications</a>      
+                             
                     </div>   
                   
                     

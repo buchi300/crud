@@ -58,7 +58,7 @@ $i=0;
                             <td><?php echo $row["date"]?></td>
                             <td><a type="button" class="btn btn-primary"  href="adminEditPublication?id=<?php echo $row["id"]?>">Edit</a></td>
                             <td><a type="button" class="btn btn-danger" href="adminDeletePublication?id=<?php echo $row["id"]?>">Delete</a></td>
-                            <td><a type="button" class="btn btn-danger" href="singlePub?id=<?php echo $row["id"]?>">View</a></td>
+                            <td><a type="button" class="btn btn-success" href="singlePub?id=<?php echo $row["id"]?>">View</a></td>
                          </tr>
                          <?php 
                             }
