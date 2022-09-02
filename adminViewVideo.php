@@ -72,7 +72,7 @@ $i=0;
 
                     }
                     } else {
-                        echo "No Blog posted";
+                        echo "No video posted";
                     }
                     ?>
 

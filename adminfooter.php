@@ -12,7 +12,7 @@
 
   <div class="me-md-auto text-center text-md-start">
     <div class="copyright">
-      &copy; Copyright <strong><span>QueenOfCodes </span></strong>. All Rights Reserved
+      &copy; Copyright <strong><span>QueenOfCodes </span></strong>
     </div>
 
   </div>
